@@ -1,0 +1,49 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body 
+{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #222;
+}
+.elastic
+ {
+position: relative; 
+width: 400px;
+height: 400px;
+background:rgb(46, 159, 211);
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+.elastic svg 
+{
+ position: absolute;
+ width: 400px; 
+ height: 150px;
+}
+.elastic svg path
+{
+    width: 100%;
+    stroke: #c737da;
+    stroke-width: 10;
+    stroke-linecap: round;
+    d: path("M 10 80 Q 190 80 390 80");
+ animation: animate 2.5s linerar infinite; 
+}
+@keyframes animate 
+{
+0% {
+    d: path("M 10 80 Q 190 80 390 80");
+     }
+
+10% {
+    d: path("M 10 80 Q 190 80 390 80");
+} 
+} 
